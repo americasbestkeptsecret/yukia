@@ -10,13 +10,15 @@ public abstract class Command {
     private final String description;
     private final String usage;
     private final int clearanceLevelRequired;
-    private final HttpClient http = HttpClient.newHttpClient();
+    private final HttpClient http;
 
     public Command(String n, String d, String u, int cLR) {
         name = n;
         description = d;
         usage = u;
         clearanceLevelRequired = cLR;
+        
+        http = HttpClient.newHttpClient();
     }
 
     public String getName() {
