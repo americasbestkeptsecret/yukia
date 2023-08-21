@@ -14,7 +14,12 @@ import java.net.http.HttpResponse;
 
 public class Neko extends Command {
     public Neko() {
-        super("neko", "Sends a random neko image.", "()", 0);
+        super(
+            "neko",
+            "Sends a random neko image.",
+            "()",
+            0
+        );
     }
 
     @Override
